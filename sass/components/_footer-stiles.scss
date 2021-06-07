@@ -1,0 +1,14 @@
+footer {
+  @extend %paddings;
+
+  background-color: $pageBackgroundColor;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-address {
+  display: block;
+}

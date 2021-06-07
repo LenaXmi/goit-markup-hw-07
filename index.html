@@ -23,8 +23,8 @@
 
     <header>
       <div class="container navigation">
-        <a class="logo" href="./index.html">
-          <span class="logo__text">Web</span>Studio
+        <a class="header-logo" href="./index.html">
+          <span class="header-logo__text">Web</span>Studio
         </a>
         <nav>
           <ul class="site-nav">
@@ -46,18 +46,18 @@
 
         <!--Contacts-->
 
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__mail" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__mail" href="mailto:info@devstudio.com">
+              <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item">
-            <a class="contacts__tel" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
+          <li class="header-contacts__item">
+            <a class="header-contacts__tel" href="tel:+380961111111">
+              <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#smartphone"></use>
               </svg>
               +38096 111 11 11</a
@@ -92,7 +92,7 @@
           <ul class="features">
             <li class="features__item">
               <div class="features__icon">
-                <svg class="features__symbol">
+                <svg class="features__symbol" width="70" height="70">
                   <use href="./images/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
@@ -105,7 +105,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg class="features__symbol">
+                <svg class="features__symbol" width="70" height="70">
                   <use href="./images/symbol-defs.svg#vector"></use>
                 </svg>
               </div>
@@ -118,7 +118,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg class="features__symbol">
+                <svg class="features__symbol" width="70" height="70">
                   <use href="./images/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
@@ -131,7 +131,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg class="features__symbol">
+                <svg class="features__symbol" width="70" height="70">
                   <use href="./images/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
@@ -508,28 +508,30 @@
       <div class="container">
         <div class="footer-address">
           <a class="footer-logo" href="./index.html">
-            <span class="logo__text">Web</span
-            ><span class="footer-logo__text">Studio</span>
+            <span class="footer-logo__text">Web</span
+            ><span class="footer-logo__text footer-logo__text--white"
+              >Studio</span
+            >
           </a>
 
           <address class="footer-contacts">
-            <ul class="contacts-list">
-              <li class="contacts-list__item">
+            <ul class="footer-contacts__list">
+              <li class="footer-contacts__item">
                 <a
-                  class="contacts-list__address"
+                  class="footer-contacts__address"
                   href="https://bit.ly/3nyjrAB"
                   target="_blank"
                   rel="noreferrer noopener"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="contacts-list__item">
-                <a class="contacts-list__mail" href="mailto:info@example.com"
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__mail" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="contacts-list__item">
-                <a class="contacts-list__tel" href="tel:+380991111111"
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__tel" href="tel:+380991111111"
                   >+38099 111 11 11</a
                 >
               </li>
@@ -625,7 +627,8 @@
               name="name"
               id="username"
               class="modal__input"
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="modal__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#person"></use>
@@ -638,7 +641,8 @@
               name="tel"
               id="userphone"
               class="modal__input"
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="modal__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#phone"></use>
@@ -651,7 +655,8 @@
               name="email"
               id="usermail"
               class="modal__input"
-              autocomplete="off"
+              autocomplete="on"
+              required
             />
             <svg class="modal__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#email"></use>

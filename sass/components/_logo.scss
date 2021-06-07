@@ -1,4 +1,4 @@
-.logo {
+.header-logo {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -17,11 +17,23 @@
     color: $mainAccentColor;
   }
 }
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 
-// .logo__text {
-//   color: $mainAccentColor;
-// }
+  color: $mainAccentColor;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
-.footer-logo__text {
-  color: $backgroundColor;
+  &__text {
+    color: $mainAccentColor;
+  }
+
+  &__text--white {
+    color: $mainBackgroundColor;
+  }
 }
